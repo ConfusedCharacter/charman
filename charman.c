@@ -7,7 +7,7 @@
 
 // game configuration
 #define EXIT_KEY 'q'
-#define GAME_SPEED 10
+#define GAME_SPEED 30
 #define FREE_SPACE ' '
 #define PLAYER_CHR 'x'
 #define PLAYER_LIFE 4
@@ -79,6 +79,7 @@ int main(void)
         if (keyhandler())
         {
             char key_received = getch();
+            for(size_t i = 0; i<10; i++){keyhandler();}
             const char *set = "wsadq";
             if (strchr(set, key_received) != NULL){
                 if (key_received == EXIT_KEY)
