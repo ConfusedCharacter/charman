@@ -188,7 +188,7 @@ void game_info(){
     sprintf(score_result,"Score: %d, Life: %d", SCORE, Player_Life);
 
     mvaddstr(1,1,score_result);
-    mvaddstr(MAX_LINES,floor(MAX_COLS/2.0),"Dev: ConfusedCharacter");
+    mvaddstr(MAX_LINES,floor(MAX_COLS/2.0),"Dev: aDarkDev");
     refresh();
 }
 
